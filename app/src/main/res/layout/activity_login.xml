@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/yellow"
+    android:alpha="0.65"
+    tools:context="badza.com.soulpet.LoginActivity">
+
+    <LinearLayout
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="56dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        >
+
+        <ImageView
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/loggo"
+            android:layout_width="wrap_content"
+            android:layout_height="72dp"
+            android:layout_marginBottom="24dp"
+            android:layout_gravity="center_horizontal"
+            />
+
+
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/username_login"
+            android:maxLines="1"
+            android:textColor="@color/AliceBlue"
+            android:hint="@string/username_login"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/email_login"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:textColor="@color/AliceBlue"
+            android:hint="@string/email_login"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/password_login"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:textColor="@color/AliceBlue"
+            android:hint="@string/password_login"
+            />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_login"
+            style="?android:textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textStyle="bold"
+            android:text="Log In"
+            android:textAllCaps="false"
+            android:background="@color/yellow"
+            android:alpha="0.65"
+            android:textColor="@color/black"
+            android:onClick="login"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="20dp"
+            >
+
+            <TextView
+                android:id="@+id/forgot_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/forgot_password"
+                android:maxLines="1"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/colorPrimary"/>
+
+            <TextView
+                android:id="@+id/get_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Get Password"
+                android:textSize="20dp"
+                android:alpha="0.65"
+                android:textColor="@color/black"
+
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="12dp"
+
+                android:onClick="getPass"
+                android:clickable="true"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="38dp"
+            >
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OR"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+
+                />
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginLeft="28dp"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="4dp"
+
+            >
+
+            <ImageView
+                android:src="@drawable/googleplus"
+                android:layout_width="24dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_marginTop="15dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Log in with Google+"
+                android:textSize="24dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="40dp"
+
+                android:layout_weight="4"
+
+                android:onClick="loginGoogle"
+                android:clickable="true"
+
+                />
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</ScrollView>
